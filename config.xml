@@ -24,5 +24,4 @@
 	<gap:splash src="assets/images/splashscreen.png" gap:platform="ios" width="320" height="480" />
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
-	<access origin="*.pushwoosh.com" browserOnly="true" subdomains="true" />
 </widget>
