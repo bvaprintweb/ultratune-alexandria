@@ -25,5 +25,6 @@
 	<feature name="PushNotification">
 		<param name="ios-package" value="PushNotification" />
 	</feature>
+    <plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
     <access origin="*.pushwoosh.com"/>
 </widget>
