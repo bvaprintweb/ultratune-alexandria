@@ -27,7 +27,9 @@
 	<icon src="assets/images/ico114.png" gap:platform="ios" width="114" height="114" />
 	<gap:splash src="assets/images/splashscreen.png" />
 	<gap:splash src="assets/images/splashscreen.png" gap:platform="ios" width="320" height="480" />
-	<gap:plugin name="com.adobe.plugins.pushplugin" />
+	 <feature name="PushPlugin">
+	        <param name="ios-package" value="com.adobe.plugins.pushplugin" />
+	    </feature>
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
 </widget>
