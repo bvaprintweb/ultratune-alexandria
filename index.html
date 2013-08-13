@@ -48,11 +48,12 @@
         // Register for notification types
         push.registerForNotificationTypes(push.notificationType.badge | push.notificationType.sound | push.notificationType.alert)
 
-        // Initiate the UI
-        initiateUI()
         
         // Get any incoming push from device ready open
         push.getIncoming(handleIncomingPush)
+        
+		// Initiate the UI
+        initiateUI()
 		
 		
       }
