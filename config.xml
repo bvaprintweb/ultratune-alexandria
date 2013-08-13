@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "WJ53B76FQB.com.bvaprintweb.ultratunealexandria"
+        id        = "com.bvaprintweb.ultratunealexandria"
         versionCode="10" 
         version   = "1.0.0">
 
@@ -16,6 +16,11 @@
 	<preference name="splash-screen-duration" value="5000" />
 	<preference name="load-url-timeout" value="60000" />
 	<preference name="webviewbounce" value="false" />
+	<preference name="com.urbanairship.production_app_key" value="R8Ww0loQQYCof62ZMKpfAA" />
+	<preference name="com.urbanairship.production_app_secret" value="xPT02uPcQFG8YU1AEjbOGQ" />
+	<preference name="com.urbanairship.development_app_key" value="YR8Ww0loQQYCof62ZMKpfAA" />
+	<preference name="com.urbanairship.development_app_secret" value="YxPT02uPcQFG8YU1AEjbOGQ" />
+	<preference name="com.urbanairship.in_production" value="no" />
 	<icon src="assets/images/ico57.png" />
 	<icon src="assets/images/ico57.png" gap:platform="ios" width="57" height="57" />
 	<icon src="assets/images/ico72.png" gap:platform="ios" width="72" height="72" />
