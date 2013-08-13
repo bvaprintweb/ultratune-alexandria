@@ -55,8 +55,15 @@
         // Get any incoming push from device ready open
         push.getIncoming(handleIncomingPush)
 		
-		window.location='http://ultratune.bvadigitalagency.com'
+		
       }
+	  
+	  var initiateUI = function() {
+        var push = window.plugins.pushNotification
+		window.location='http://ultratune.bvadigitalagency.com'
+	  }
+	  
+	  document.addEventListener("deviceready", onDeviceReady)
 </script>
 </head>
 <body style="background: url(assets/images/splashscreen.png) no-repeat #58AB41 top left;"></body>
