@@ -4,67 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ultra Tune Alexandria</title>
-    <script type="text/javascript">
-
-      var onDeviceReady = function() {
-        var push = window.plugins.pushNotification
-
-        // Incoming message callback
-        var handleIncomingPush = function(incoming) {
-          if(incoming.message) {
-            console.log("Incoming push: " + incoming.message)
-          } else {
-            console.log("No incoming message")
-          }
-        }
-
-        // Registration callback
-        var onRegistration = function(error, pushID)  {
-          if (!error) {
-            console.log("Reg Success: " + pushID)
-            $('#id').text(pushID)
-          } else {
-            console.log(error)
-          }
-        }
-
-        // push event callback
-        var onPush = function(data) {
-          console.log("Received push: " + data.message)
-        }
-
-        // Register for any registration events
-        push.registerEvent('registration', onRegistration)
-
-        // Register for any push events
-        push.registerEvent('push', onPush)
-
-        // Reset Badge on resume and check for any incoming pushes
-        document.addEventListener("resume", function() {
-          push.resetBadge()
-          push.getIncoming(handleIncomingPush)
-        })
-
-        // Register for notification types
-        push.registerForNotificationTypes(push.notificationType.badge | push.notificationType.sound | push.notificationType.alert)
-
-        
-        // Get any incoming push from device ready open
-        push.getIncoming(handleIncomingPush)
-        
-		// Initiate the UI
-        initiateUI()
-		
-		
-      }
-	  
-	  var initiateUI = function() {
-        var push = window.plugins.pushNotification
-		window.location='http://ultratune.bvadigitalagency.com'
-	  }
-	  
-	  document.addEventListener("deviceready", onDeviceReady)
-</script>
 </head>
-<body style="background: url(assets/images/splashscreen.png) no-repeat #58AB41 top left;"></body>
+<body style="background: url(assets/images/splashscreen.png) no-repeat #58AB41 top left;" onLoad="window.location='http://ultratune.bvadigitalagency.com'"></body>
 </html>
